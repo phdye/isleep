@@ -1,0 +1,13 @@
+# Ignore build artifacts
+dist/
+build/
+*.egg-info/
+
+# Ignore PDM artifacts
+__pypackages__/
+.pdm.toml
+.pdm.lock
+
+# Ignore Python cache
+__pycache__/
+*.pyc

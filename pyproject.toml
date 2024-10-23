@@ -1,0 +1,22 @@
+[project]
+name = "isleep"
+version = "0.1.0"
+description = "Interruptible sleep(1)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Philip Dye", email = "phdye@acm.org" }]
+dependencies = ["docopt-ng"]
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.3.3",
+    "pip>=24.2",
+]
+
+[project.scripts]
+isleep = "isleep:main"
